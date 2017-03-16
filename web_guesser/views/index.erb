@@ -1,6 +1,31 @@
 
 <html>
-	<head></head>
+	<head>
+		<style>
+			<% if user_input == number%>
+				body{
+					background:green;
+				}
+			<% elsif user_input > number + 5 %>
+				body{
+					background:#ff0000;
+				}
+			<% elsif user_input < number - 5 %>
+				body{
+					background:#ff0000;
+				}
+			<% elsif user_input < number %>
+				body{
+					background:#ff4949;
+				}
+			<% elsif user_input > number %>
+				body{
+					background:#ff4949;
+				}
+			<% end %>
+
+		</style>
+	</head>
 	<body>
 		
 		<form>
