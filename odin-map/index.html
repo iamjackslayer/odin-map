@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Odin Map</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="index.css"></link>
+</head>
+<body>
+<section id="main">
+	<div class="container">
+		<div class="row">
+			<h1>Welcome my mapper!</h1>
+			<div class="col-md-5">
+				<form id="form">
+					<div class="row">
+							
+						<div class="input-group">
+							<div class="col-md-6">
+							  
+							  <input name="lat" id="lat" type="text" class="form-control" placeholder="latitude" aria-describedby="basic-addon1">
+								
+							</div>
+							<div class="col-md-6">
+							  
+							  <input name="lng" id="lng" type="text" class="form-control"  placeholder="longitude" aria-describedby="basic-addon1">
+								
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="input-group">
+							<div class="col-md-12">
+								
+							  <input id="msg" name="msg" type="text" class="form-control"  placeholder="message" aria-describedby="basic-addon1">
+							</div>
+						</div>
+					</div>
+					<br>
+					<input id="go" type="submit" value="Go!" class="btn btn-default"></input>
+				</form>
+			</div>
+			<div class="col-md-7" id="map">
+				
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+<script src="val.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript"></script>
+<script src="map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARpj_-Bu9NHzhMIAdSSSsgXqTXjMJDqts"
+    async defer></script>
+    <script src="index.js"></script>
+</body>
+</html>
